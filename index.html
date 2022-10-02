@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather App</title>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="src/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div class="container">
+        <div class="card" >
+            <div class="card-body">
+                            <div class="row">
+                        <div class="col-3">
+                            <span id="day"class="day">WED</span> <br>
+                            <span id="month" class="data">September</span>,<span id = "data"class="data">14</span> <br>
+                            <span id="hours"class="time">23</span>:<span id="minutes"class="time">44</span><br>
+                            <span id="city" class="city">GDANSK</span>
+                        </div>
+                        <form id = "search-form" class = "searchForm">
+                            <div class="row">
+
+                        <div  class="col-5">
+                             <input type="text" class="form-control" id="enterCity" placeholder="Enter your city" />
+                            
+                            </div>
+                       
+                      <div class="col-2">
+                            <button type="submit" class="btn btn-primary">Search</button>
+                        </div> 
+                        <div class="col-7">
+                            <button type="submit" class="btnCurrent" id="current-location">Current location</button>
+                        </div> 
+        
+                    </div> 
+                    </form>    
+
+                        
+                    <div >
+                        <div class="imgFirst" >
+                            <img src="images/cloud.png" alt="Clouds" class="icon" id="data-icon" />
+                        </div>
+                            <div class="temp">
+
+                                        <span class=" temperature" id="temperature">11</span>
+                                        <span class="unit">
+                                          <span class="celsiusfar-a" id="celsius-link">°C</span>|
+                                          <a href="#" class="celsiusfar"
+                                            id="fahrenheit-link">°F</a></span>   
+                        </div>
+                        <div class="hum">
+                            <p class="wind">
+                                Humidity: <span id="data-humidity">67</span> % 
+                                <br />
+                                <span class="wind" >
+                                Wind: <span id="data-wind">5</span>  km/h</span>
+                            </p>
+                        </div>
+                    </div>
+                
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">THU</th>
+                            <th scope="col">FRI</th>
+                            <th scope="col">SAT</th>
+                            <th scope="col">SUN</th>
+                            <th scope="col">MON</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"></th>
+                            <td class="emoji">🌤</td>
+                            <td class="emoji">🌦️️</td>
+                            <td class="emoji">⛈</td>
+                            <td class="emoji">🌦️</td>
+                            <td class="emoji">🌤️</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">MAX</th>
+                            <td>21°C</td>
+                            <td>18°C</td>
+                            <td>15°C</td>
+                            <td>17°C</td>
+                            <td>18°C</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">MIN</th>
+                            <td>11°C</td>
+                            <td>9°C</td>
+                            <td>7°C</td>
+                            <td>8°C</td>
+                            <td>10°C</td>
+                        </tr>
+                    </tbody>
+                </table>
+           
+        </div>
+        <footer class="footer">
+            <span class="footer-text"><a href="https://github.com/NataliiaBoiko22/my-awesome-project" target="_blank" class="main-link">Open-source</a> code by Nataliia Boiko</span>
+        </footer>
+    </div>
+    <script src="src/index.js"></script>
+
+</body>
+
+</html>

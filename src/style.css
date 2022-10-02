@@ -1,0 +1,126 @@
+
+.card {
+  margin: 30px  auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(#6391bd, #c7e1ee);
+}
+
+.day {
+  font-size: large;
+  margin: 0 10px;
+  font-weight: bold;
+}
+.col-3{
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.data,
+.time {
+  font-size: large;
+  font-weight: bold;
+}
+
+.wind{
+  font-size: large;
+  font-weight: bold;
+  color: darkblue;
+  opacity: 85%;
+
+}
+.searchForm {
+  position: absolute;
+  top: 5%;
+  left: 30%;
+}
+
+.form-control {
+  border: #185fa1;
+  background: linear-gradient(#549fe6, #e6eaec);
+}
+
+.btnCurrent {
+  position: flex;
+  border: #185fa1;
+  background: linear-gradient(#3371a7, #77b5d5);
+  border-radius: 5%;
+  padding: 5px 20px;
+  color: white;
+}
+.btnCurrent:hover{
+  background: linear-gradient(#285d8c, #557c91);
+}
+.table {
+  text-align: center;
+}
+
+p {
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+.city {
+  font-weight: 800;
+  font-size: x-large;
+  color: darkblue;
+}
+
+.temperature {
+  margin: 10px;
+  font-size: 50px;
+  font-weight: 400;
+}
+.celfar {
+  margin: 10px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.emoji {
+  
+  font-size: 170%;
+}
+.imgFirst{
+  float: left;
+  width: 100px;
+  height: 80px;
+}
+.icon {
+  width: 100%;
+}
+.temp {
+  float: left;
+  width: 200px;
+  height: 80px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.hum{
+  float: left;
+
+  width: 200px;
+  height: 80px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: smaller;
+}
+
+.footer {
+  text-align: center;
+}
+.footer-text {
+  color: white;
+  font-size: 14px;
+}
+
+.main-link {
+  color: white;
+  text-decoration: underline;
+  transition: all 0.3s ease-in-out;
+}
+
+.main-link:hover {
+  color: grey;
+}
